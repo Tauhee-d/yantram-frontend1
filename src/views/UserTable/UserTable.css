@@ -1,0 +1,17 @@
+.UserTable {
+    /* flex: 4;'' */
+    display: flex;
+
+    background-color: rgb(187, 205, 181);
+
+}
+.Heading {
+    color: black;
+    background-color: #04AA6D;;
+}
+.flexLeft{
+    flex: 1;
+}
+.flexRight{
+    flex: 4;
+}

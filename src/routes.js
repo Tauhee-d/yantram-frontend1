@@ -17,6 +17,7 @@
 */
 import Dashboard from "views/Dashboard.js";
 import Dashboard1 from './components/Dashboard/Dashboard1.jsx'
+import UserTable from 'views/UserTable/UserTable'
 import UserProfile from "views/UserProfile.js";
 import TableList from "views/TableList.js";
 import Typography from "views/Typography.js";
@@ -46,6 +47,13 @@ const dashboardRoutes = [
     name: "Dashboard1",
     icon: "nc-icon nc-chart-pie-35",
     component: Dashboard1,
+    layout: "/admin"
+  },
+  {
+    path: "/profile",
+    name: "UserTable",
+    icon: "nc-icon nc-circle-09",
+    component: UserTable,
     layout: "/admin"
   },
   {
