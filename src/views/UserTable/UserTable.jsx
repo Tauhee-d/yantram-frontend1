@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './UserTable.css'
 import { NavLink } from "react-router-dom";
 import { Link } from 'react-router-dom';
+import UserDetail from 'views/UserDetail/UserDetail';
+
 
 
 
@@ -33,21 +35,21 @@ const Row = (props) => {
         <tr>
 
 
-            {/* <td><Link to='./userDetail'>{userId}</Link></td>
-            <td><Link to='./userDetail'>{name}</Link></td>
-            <td><Link to='./userDetail'>{gender}</Link></td>
-            <td><Link to='./userDetail'>{weight}</Link></td>
-            <td><Link to='./userDetail'>{age}</Link></td>
-            <td><Link to='./userDetail'>{addedOn}</Link></td> */}
+            <td className='tabledata'><Link to='./UserDetail'  >{name}</Link></td>
+            <td className='tabledata'><Link to='./UserDetail'  >{userId}</Link></td>
+            <td className='tabledata'><Link to='./UserDetail'  >{gender}</Link></td>
+            <td className='tabledata'><Link to='./UserDetail'  >{weight}</Link></td>
+            <td className='tabledata'><Link to='./UserDetail'  >{age}</Link></td>
+            <td className='tabledata'><Link to='./UserDetail'  >{addedOn}</Link></td>
 
 
 
-            <td>{userId}</td>
+            {/* <td>{userId}</td>
             <td>{name}</td>
             <td>{gender}</td>
             <td>{weight}</td>
             <td>{age}</td>
-            <td>{addedOn}</td>
+            <td>{addedOn}</td> */}
         </tr>
         // </tr></Link>
     )

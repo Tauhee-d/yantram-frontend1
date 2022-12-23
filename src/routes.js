@@ -18,6 +18,7 @@
 import Dashboard from "views/Dashboard.js";
 import Dashboard1 from './components/Dashboard/Dashboard1.jsx'
 import UserTable from 'views/UserTable/UserTable'
+import UserDetail from "views/UserDetail/UserDetail.jsx";
 import UserProfile from "views/UserProfile.js";
 import TableList from "views/TableList.js";
 import Typography from "views/Typography.js";
@@ -54,6 +55,13 @@ const dashboardRoutes = [
     name: "UserTable",
     icon: "nc-icon nc-circle-09",
     component: UserTable,
+    layout: "/admin"
+  },
+  {
+    path: "/UserDetail",
+    // name: "UserDetail",
+    // icon: "nc-icon nc-circle-09",
+    component: UserDetail,
     layout: "/admin"
   },
   {
