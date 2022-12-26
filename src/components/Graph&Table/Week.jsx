@@ -85,37 +85,36 @@ export default function Week() {
     return (
         <>
 
-            <div className="Dashboard" >
-
-<div >
-    
-    <div className="container">
-      
-<div>
-        <div className='left'>
-
-            <h4>Time and Temperature Table</h4>
-            <Table data={rows} />
-        </div>
-        </div>
-        <div className='right'>
+          
 
 
-            <ResponsiveContainer width={600} height={250} aspect={3} className='graph' >
+<div className="Dashboard">
+        <div>
+          {/* <Topbar/> */}
+          <div className="container">
+            {/* <div> */}
+            <div className="right1">
+              <h3>Time and Temperature Table</h3>
+              <ResponsiveContainer width={1050} aspect={3} className="graph">
                 <LineChart data={weekData}>
-                    <Line dataKey='Temperature' stroke='red' />
-                    <Legend />
-                    <XAxis dataKey='Time' interval={'preserveStartEnd'} />
-                    <YAxis dataKey='Temperature' interval={'preserveStartEnd'} />
-                    <Tooltip />
+                  <Line dataKey="Temperature" stroke="red" />
+                  <Legend />
+                  <XAxis dataKey="Time" interval={"preserveStartEnd"} />
+                  <YAxis dataKey="Temperature" interval={"preserveStartEnd"} />
+                  <Tooltip />
                 </LineChart>
-            </ResponsiveContainer>
-         
+              </ResponsiveContainer>
+          
+            </div>
+          </div>
+                <div className="left1">
+                    <Table data={rows} />
+                </div>
         </div>
-    </div>
+      </div>
 
-</div>
-</div>
+
+
         </>
     )
 }

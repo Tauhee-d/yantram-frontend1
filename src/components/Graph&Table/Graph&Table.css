@@ -1,6 +1,7 @@
 .Dashboard {
     flex: 4;
-    background-color: rgb(187, 205, 181);
+    background-color: #fff;
+    /* background-color: rgb(187, 205, 181); */
     /* height: 100; */
 }
 

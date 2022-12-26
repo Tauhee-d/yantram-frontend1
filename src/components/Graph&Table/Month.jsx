@@ -96,7 +96,7 @@ export default function Month() {
         <>
 
 
-            <div className="Dashboard" >
+            {/* <div className="Dashboard" >
 
 <div >
     
@@ -109,7 +109,6 @@ export default function Month() {
             <Table data={rows} />
         </div>
         </div>
-        {/* <div> */}
         <div className='right'>
 
 
@@ -127,7 +126,31 @@ export default function Month() {
     </div>
 
 </div>
-</div>
+</div> */}
+<div className="Dashboard">
+        <div>
+          {/* <Topbar/> */}
+          <div className="container">
+            {/* <div> */}
+            <div className="right1">
+              <h3>Time and Temperature Table</h3>
+              <ResponsiveContainer width={1050} aspect={3} className="graph">
+                <LineChart data={monthData}>
+                  <Line dataKey="Temperature" stroke="red" />
+                  <Legend />
+                  <XAxis dataKey="Time" interval={"preserveStartEnd"} />
+                  <YAxis dataKey="Temperature" interval={"preserveStartEnd"} />
+                  <Tooltip />
+                </LineChart>
+              </ResponsiveContainer>
+          
+            </div>
+          </div>
+                <div className="left1">
+                    <Table data={rows} />
+                </div>
+        </div>
+      </div>
         </>
     )
 }
