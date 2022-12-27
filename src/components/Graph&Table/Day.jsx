@@ -96,7 +96,7 @@ export default function Day() {
             {/* <div> */}
             <div className="right1">
               <h4 style={{marginLeft:"40px"}}>Time and Temperature Table</h4>
-              <ResponsiveContainer width={1050} aspect={3} className="graph">
+              <ResponsiveContainer width={"100%"} aspect={3} className="graph">
                 <LineChart data={Data}>
                   <Line dataKey="Temperature" stroke="red" />
                   <Legend />

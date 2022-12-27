@@ -165,7 +165,7 @@ const RowTable = (props) => {
           </>
     )
 }
-function UserTable() {
+function UserProfile() {
         const [rows, setRows] = useState(UserData)
 
   return (
@@ -201,4 +201,4 @@ function UserTable() {
   );
 }
 
-export default UserTable;
+export default UserProfile;

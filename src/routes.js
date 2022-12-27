@@ -17,7 +17,7 @@
 */
 import Dashboard from "views/Dashboard.js";
 import Dashboard1 from './components/Dashboard/Dashboard1.jsx'
-import UserTable from 'views/UserTable/UserTable'
+import userProfile from 'views/userProfile/userProfile'
 import UserDetail from "views/UserDetail/UserDetail.jsx";
 import UserProfile from "views/UserProfile.js";
 import TableList from "views/TableList.js";
@@ -28,14 +28,7 @@ import Notifications from "views/Notifications.js";
 import Upgrade from "views/Upgrade.js";
 
 const dashboardRoutes = [
-  {
-    upgrade: true,
-    path: "/upgrade",
-    name: "Upgrade to PRO",
-    icon: "nc-icon nc-alien-33",
-    component: Upgrade,
-    layout: "/admin"
-  },
+  
   {
     path: "/dashboard",
     name: "Dashboard",
@@ -45,25 +38,19 @@ const dashboardRoutes = [
   },
   {
     path: "/dashboard1",
-    name: "Dashboard1",
-    icon: "nc-icon nc-chart-pie-35",
+    // name: "Dashboard1",
+    // icon: "nc-icon nc-chart-pie-35",
     component: Dashboard1,
     layout: "/admin"
   },
   {
     path: "/profile",
-    name: "UserTable",
+    name: "User Profile",
     icon: "nc-icon nc-circle-09",
-    component: UserTable,
+    component: userProfile,
     layout: "/admin"
   },
-  {
-    path: "/UserDetail",
-    // name: "UserDetail",
-    // icon: "nc-icon nc-circle-09",
-    component: UserDetail,
-    layout: "/admin"
-  },
+ 
   {
     path: "/user",
     name: "User Profile",
