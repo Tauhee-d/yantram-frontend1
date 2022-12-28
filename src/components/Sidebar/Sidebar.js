@@ -16,11 +16,12 @@
 
 */
 import React, { Component } from "react";
-import { useLocation, NavLink } from "react-router-dom";
+import { useLocation, NavLink,Route } from "react-router-dom";
 
 import { Nav } from "react-bootstrap";
 
 import logo from "assets/img/reactlogo.png";
+import Dashboard1 from "components/Dashboard/Dashboard1";
 
 function Sidebar({ color, image, routes }) {
   const location = useLocation();
@@ -42,14 +43,16 @@ function Sidebar({ color, image, routes }) {
             className="simple-text logo-mini mx-1"
           >
             <div className="logo-img">
-              <img src={require("assets/img/yantram.jpeg")} style={{height:"100px",width:"200px"}} alt="..." />
+              <img src={require("assets/img/yantram.jpeg")} sizes={'100px'} alt="..." />
             </div>
           </a>
-          <a className="simple-text" href="http://www.creative-tim.com">
-            Yantram
+          <a className="simple-text" href="http://www.creative-tim.com">  
+            yantram
           </a>
         </div>
+        
         <Nav>
+       
           {routes.map((prop, key) => {
             if (!prop.redirect)
               return (
@@ -69,10 +72,14 @@ function Sidebar({ color, image, routes }) {
                     <i className={prop.icon} />
                     <p>{prop.name}</p>
                   </NavLink>
+                  {/* <NavLink></NavLink> */}
+                  {/* <NavLink exact to="/dashboard1"><Dashboard1/></NavLink> */}
+
                 </li>
               );
             return null;
           })}
+          
         </Nav>
       </div>
     </div>

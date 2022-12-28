@@ -1,14 +1,15 @@
 import React from 'react'
-import './UserDetail.css'
+// import './Devices.css'
 
-const UserDetail = () => {
+const Devices = () => {
     return (
         <>
         <div className='UserDetail' >
-            <h3>User Detail Page</h3>
+            <h3>Devices</h3>
+
         </div>
         </>
     )
 }
 
-export default UserDetail
+export default Devices

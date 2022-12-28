@@ -26,6 +26,7 @@ import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
 import routes from "routes.js";
 
 import sidebarImage from "assets/img/sidebar-3.jpg";
+import Dashboard1 from "components/Dashboard/Dashboard1";
 
 function Admin() {
   const [image, setImage] = React.useState(sidebarImage);
@@ -67,8 +68,14 @@ function Admin() {
         <Sidebar color={color} image={hasImage ? image : ""} routes={routes} />
         <div className="main-panel" ref={mainPanel}>
           <AdminNavbar />
+      <Route path="/dashboard1"><Dashboard1 /></Route>
+      {/* <NavLink exact to="/dashboard1"><Dashboard1/></NavLink> */}
+
           <div className="content">
-            <Switch>{getRoutes(routes)}</Switch>
+            <Switch>
+              {getRoutes(routes)}
+            
+    </Switch>
           </div>
           <Footer />
         </div>

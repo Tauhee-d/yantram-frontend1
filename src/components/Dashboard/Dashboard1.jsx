@@ -8,6 +8,7 @@ import './Dashboard.css'
 import Day from 'components/Graph&Table/Day'
 import Week from 'components/Graph&Table/Week'
 import Month from 'components/Graph&Table/Month'
+import DashProfile from './DashProfile'
 
 
 function Dashboard() {
@@ -16,7 +17,10 @@ function Dashboard() {
     <>
    
 
+<DashProfile/>
     <div className='Dashboard'  >
+{/* <div className="flexLeft"> */}
+{/* </div> */}
 
 <div className="flexRight">
       <div>

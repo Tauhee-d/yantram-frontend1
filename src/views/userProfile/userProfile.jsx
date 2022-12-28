@@ -89,7 +89,7 @@
 import React, { useState } from 'react'
 import { NavLink } from "react-router-dom";
 import { Link } from 'react-router-dom';
-import UserDetail from 'views/UserDetail/UserDetail';
+import Devices from 'views/Devices/Devices';
 
 
 // react-bootstrap components
@@ -136,9 +136,9 @@ const Rows = (props) => {
     return (
         <tr>
 
-
-            <td className='tabledata'><Link to='./dashboard1'  >{userId}</Link></td>
-            <td className='tabledata'><Link to='./dashboard1'  >{name}</Link></td>
+            <td className='tabledata'><NavLink exact to="./dashboard1">{userId}</NavLink></td>
+            {/* <td className='tabledata'><Link to='./dashboard1'  >{userId}</Link></td> */}
+            <td className='tabledata'><Link to='./dashboard1'  > {name}</Link></td>
             <td className='tabledata'><Link to='./dashboard1'  >{gender}</Link></td>
             <td className='tabledata'><Link to='./dashboard1'  >{weight}</Link></td>
             <td className='tabledata'><Link to='./dashboard1'  >{age}</Link></td>
