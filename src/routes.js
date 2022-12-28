@@ -32,13 +32,13 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 </div>
 const dashboardRoutes = [
   
-  // {
-  //   path: "/dashboard",
-  //   name: "Dashboard",
-  //   icon: "nc-icon nc-chart-pie-35",
-  //   component: Dashboard,
-  //   layout: "/admin"
-  // },
+  {
+    path: "/dashboard",
+    name: "Dashboard",
+    icon: "nc-icon nc-chart-pie-35",
+    component: Dashboard,
+    layout: "/admin"
+  },
   {
     path: "/dashboard1",
     // name: "Dashboard1",s
@@ -66,7 +66,7 @@ const dashboardRoutes = [
   // },
   {
     path: "/devices",
-    name: " Profile",
+    name: " Devices",
     icon: "nc-icon nc-circle-09",
     component: Devices,
     layout: "/admin"
